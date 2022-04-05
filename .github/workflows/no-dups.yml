@@ -12,8 +12,6 @@ jobs:
 
     - name: Install jscpd
       run: sudo npm install -g jscpd
-    - name: Install ignore
-      run: sudo npm install -g ignore-files
 
     - name: Check duplications
-      run: jscpd . --min-lines 3 --min-tokens 48 --threshold 0 | ignore **/*.yml
+      run: jscpd . --min-lines 3 --min-tokens 48 --threshold 0 --ignore "/.github/workflows/*.yml" 
