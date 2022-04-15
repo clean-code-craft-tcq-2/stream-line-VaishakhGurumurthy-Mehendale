@@ -32,14 +32,15 @@ jobs:
     - name: Run Jar
       run: java -jar artifacts/*.jar
   
-    - uses: actions/checkout@v2
-
     - name: install coverage tool
       run: |
         sudo apt-get update
         sudo apt-get install -y gcovr
     - name: build
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o Receiver *.c*
+    
+    - name: Pipeline sender/receiver
+      run: ./testsender | ./Receiver  
       
     - name: run
       run: ./Receiver
