@@ -1,5 +1,5 @@
-#ifndef Receiver_H
-#define Receiver_H
+#ifndef RECEIVER_H
+#define RECEIVER_H
 
 void ReadConsoleData();
 
