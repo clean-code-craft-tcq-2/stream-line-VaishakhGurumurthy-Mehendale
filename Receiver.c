@@ -10,10 +10,5 @@ void ReadConsoleData()
   {
      scanf("%c",&data);
      printf("%c",data);
-    if(data == '\n')
-    {
-      printf("\n");
-    }
-    
   }
 }
