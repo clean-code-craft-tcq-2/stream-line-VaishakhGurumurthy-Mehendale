@@ -5,7 +5,7 @@
 void ReadConsoleData()
 {
   char data[1000];
-  for(int i=0;i<1000;i++)
+  while(data[i] != '\0')
   {
      scanf("%c",&data[i]);
   }
