@@ -8,8 +8,8 @@ void ReadConsoleData()
   //int data;
   for(int i=0;i<1000;i++)
   {
-     scanf("%d",&data);
-     printf("%d",data);
+     scanf("%c",&data);
+     printf("%c",data);
     if(data == '\n')
     {
       printf("\n");
