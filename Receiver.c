@@ -9,7 +9,7 @@ void ReadConsoleData()
   for(int i=0;i<1000;i++)
   {
      scanf("%d",&data);
-     printf("%c",data);
+     printf("%d",data);
     if(data == '\n')
     {
       printf("\n");
