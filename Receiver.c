@@ -3,11 +3,11 @@
 
 #include "Receiver.h"
 
+int Amps[100];
+int kelvin[100];
 char data[1000];
 char Amps_c[5];
 char Kelvin_c[5];
-int Amps[100];
-int kelvin[100];
 int AmpsFlag_Count=0;
 int KelvinFlag_Count=0;
 int AmpsFlag=0;
