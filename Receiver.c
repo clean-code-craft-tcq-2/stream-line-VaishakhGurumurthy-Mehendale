@@ -4,11 +4,8 @@
 void ReadConsoleData()
 {
   char data;
-  while(data !=',')
-  {
-     scanf("%c",&data);
-  }
-  for(int i=0;i<1000;i++)
+ 
+  for(int i=0;i<35000;i++)
   {
      scanf("%c",&data);
      printf("%d ",data);
