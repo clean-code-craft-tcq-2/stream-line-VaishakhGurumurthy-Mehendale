@@ -40,7 +40,7 @@ jobs:
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o Receiver *.c*
     
     - name: Pipeline sender/receiver
-      run: ./testsender | ./Receiver  
+      run: java -jar artifacts/*.jar | ./Receiver  
       
     - name: run
       run: ./Receiver
