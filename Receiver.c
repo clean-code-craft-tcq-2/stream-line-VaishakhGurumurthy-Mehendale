@@ -29,6 +29,7 @@ void FetchAmpsandKelvindata()
         AmpsFlag=0;
         printf("A=%s ",Amps_c);
         Amps_c[5]={'\0'};
+        AmpsFlag_Count=0;
       }
       else
       {
