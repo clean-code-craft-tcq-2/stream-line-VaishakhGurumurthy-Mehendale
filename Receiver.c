@@ -25,7 +25,7 @@ int ConvertCharToInt(int Flag_Count,char *CharReadData)
     ConvetedIntData += (int) (CharReadData[counter]- '0');
     counter++;
   }
-  printf("data=%d\n",ConvetedIntData);
+  //printf("data=%d\n",ConvetedIntData);
   return ConvetedIntData;
 }
 
@@ -44,7 +44,7 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag=1;
         AmpsFlag=0;
-        printf("A=%s ",Amps_c);
+        //printf("A=%s ",Amps_c);
         Amps[AIndex_I++]=ConvertCharToInt(AmpsFlag_Count,Amps_c);
         printf("Index=Amps[%d]=%d\n ",AIndex_I-1,Amps[AIndex_I-1]);
         memset(Amps_c, 0, 5);
@@ -61,7 +61,7 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag=0;
         AmpsFlag=1;        
-        printf("K=%s ",Kelvin_c);
+        //printf("K=%s ",Kelvin_c);
         kelvin[KIndex_I++]=ConvertCharToInt(KelvinFlag_Count,Kelvin_c);   
         KelvinFlag_Count=0;
         printf("\n");
@@ -91,12 +91,14 @@ void ReadConsoleData()
   
   for(int i=0;i<1000;i++)
   {
-     printf("%c",data[i]);
-  }
-  
-   for(int i=0;i<1000;i++)
-  {
      printf("Converted A= %d K=%d\n",Amps[i], kelvin[i]);
   }
+  
+  for(int i=0;i<1000;i++)
+  {
+     //printf("%c",data[i]);
+  }
+  
+   
   
 }
