@@ -21,7 +21,7 @@ int ConvertCharToInt(int AmpsFlag_Count,char *Amps_c)
   while(counter != AmpsFlag_Count)
   {
     data=data*10;
-    data+=Amps_c[counter];
+    data+= (int) (Amps_c[counter]- '0');
     counter++;
   }
   printf("Converted data= %d \n",data);
