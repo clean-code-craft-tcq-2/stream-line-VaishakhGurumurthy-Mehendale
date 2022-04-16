@@ -77,9 +77,9 @@ void ReadConsoleData()
 {
   do
   {
-    scanf("%c",&data[i]);
+    scanf("%c",&data[MaxReadCharCounts]);
     MaxReadCharCounts++;
-  }while(data[i-1] != '\0');
+  }while(data[MaxReadCharCounts-1] != '\0');
   
   FetchAmpsandKelvindata();
   
