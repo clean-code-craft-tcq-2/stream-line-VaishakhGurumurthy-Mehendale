@@ -24,6 +24,7 @@ int ConvertCharToInt(int AmpsFlag_Count,char *Amps_c)
     data+= (int) (Amps_c[counter]- '0');
     counter++;
   }
+  printf("data=%d\n",data);
   return data;
 }
 
