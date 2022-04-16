@@ -41,12 +41,12 @@ void FetchAmpsandKelvindata()
         KelvingFlag=0;
         AmpsFlag=1;
         KelvinFlag_Count=0;
-        printf("Came\n");
         printf("K=%s \n",Kelvin_c);
       }
       else
       {
         Kelvin_c[KelvinFlag_Count++]=data[Index];
+        printf("K=%d \n",data[Index]);
       }
     }
   }
