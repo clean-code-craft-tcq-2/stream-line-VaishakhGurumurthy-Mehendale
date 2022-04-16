@@ -21,7 +21,7 @@ void FetchAmpsandKelvindata()
       AmpsFlag=1;
       AmpsFlag_Count=0;
     }
-    if(AmpsFlag == 1)
+    else if(AmpsFlag == 1)
     {
       if(data[Index] == ',')
       {
@@ -34,7 +34,7 @@ void FetchAmpsandKelvindata()
         printf("A=%s  ",Amps_c);
       }
     }
-    if(KelvingFlag == 1)
+    else if(KelvingFlag == 1)
     {
       if(data[Index] == '\n')
       {
