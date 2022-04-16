@@ -27,11 +27,11 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag=1;
         AmpsFlag=0;
+        printf("A=%s  ",Amps_c);
       }
       else
       {
         Amps_c[AmpsFlag_Count++]=data[Index];
-        printf("A=%s  ",Amps_c);
       }
     }
     else if(KelvingFlag == 1)
@@ -41,11 +41,12 @@ void FetchAmpsandKelvindata()
         KelvingFlag=0;
         AmpsFlag=1;
         KelvinFlag_Count=0;
+          printf("K=%s \n",Kelvin_c);
       }
       else
       {
         Kelvin_c[KelvinFlag_Count++]=data[Index];
-        printf("K=%s \n",Kelvin_c);
+     
       }
     }
   }
