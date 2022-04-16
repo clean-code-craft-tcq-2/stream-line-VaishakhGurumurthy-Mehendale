@@ -33,6 +33,7 @@ void FetchAmpsandKelvindata()
 {
   for(int Index=0; 1000 > Index ; Index++)
   {
+    printf("Index=Amps[0]=%d %d\n ",Amps[0],Index);
     if(data[Index]=='\n' && KelvingFlag != 1)
     {
       AmpsFlag=1;
@@ -46,7 +47,7 @@ void FetchAmpsandKelvindata()
         AmpsFlag=0;
         //printf("A=%s ",Amps_c);
         Amps[AIndex_I++]=ConvertCharToInt(AmpsFlag_Count,Amps_c);
-        printf("Index=Amps[%d]=%d\n ",AIndex_I-1,Amps[AIndex_I-1]);
+        //printf("Index=Amps[%d]=%d\n ",AIndex_I-1,Amps[AIndex_I-1]);
         memset(Amps_c, 0, 5);
         AmpsFlag_Count=0;
       }
@@ -84,8 +85,6 @@ void ReadConsoleData()
     scanf("%c",&data[i]);
     i++;
   }while(data[i-1] != '\0');
-  
-  printf("finished =%d \n",i);
   
   FetchAmpsandKelvindata();
   
