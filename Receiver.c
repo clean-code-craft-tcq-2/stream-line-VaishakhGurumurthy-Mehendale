@@ -3,10 +3,10 @@
 
 void ReadConsoleData()
 {
-  int data;
+  char data;
   for(int i=0;i<1000;i++)
   {
-    scanf("%d",data);
+    scanf("%c",&data);
      printf("%d ",data);
     if(data == '\n')
     {
