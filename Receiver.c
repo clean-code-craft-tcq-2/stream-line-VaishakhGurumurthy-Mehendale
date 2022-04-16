@@ -16,7 +16,7 @@ void FetchAmpsandKelvindata()
 {
   for(int Index=0; 100 > Index ; Index++)
   {
-    if(data[Index]=='\n')
+    if(data[Index]=='\n' && KelvingFlag != 1)
     {
       AmpsFlag=1;
       AmpsFlag_Count=0;
