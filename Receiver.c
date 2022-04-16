@@ -3,8 +3,8 @@
 
 #include "Receiver.h"
 
-int Amps[100];
-int kelvin[100];
+int Amps[50];
+int kelvin[50];
 char data[1000];
 char Amps_c[5];
 char Kelvin_c[5];
@@ -88,9 +88,9 @@ void ReadConsoleData()
   
   FetchAmpsandKelvindata();
   
-  for(int AIndex_I=0;AIndex_I<1000;AIndex_I++)
+  for(int AIndex_I=0;AIndex_I<50;AIndex_I++)
   {
-     printf("Amps[%d]=%d\n ",AIndex_I,Amps[AIndex_I]);
+     printf("Amps[%d]=%d Kelvin[%d]=%d\n ",AIndex_I,Amps[AIndex_I],AIndex_I,kelvin[AIndex_I]);
   }
   
   for(int i=0;i<1000;i++)
