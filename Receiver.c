@@ -6,6 +6,7 @@ char data[1000];
 int Amps[100];
 int kelvin[100];
 int AmpsFlag_Count=0;
+int KelvinFlag_Count=0;
 char Amps_c[5];
 char Kelvin_c[5];
 int AmpsFlag=0;
