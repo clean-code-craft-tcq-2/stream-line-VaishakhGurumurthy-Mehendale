@@ -8,10 +8,10 @@ void ReadConsoleData()
   int i=0;
   do
   {
-     scanf("%c",&data[i]);
+    scanf("%c",&data[i]);
     i++;
   }while(data[i] != '\0');
-  
+  printf("finished =%d \n",i);
   for(int i=0;i<1000;i++)
   {
      printf("%c",data[i]);
