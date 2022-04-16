@@ -6,9 +6,9 @@ void ReadConsoleData()
 {
   char data;
  
-  for(int i=0;i<35000;i++)
+  for(int i=0;i<1000;i++)
   {
-     scanf("%d",&data);
+     scanf("%c",&data);
      printf("%c ",data);
     if(data == '\n')
     {
