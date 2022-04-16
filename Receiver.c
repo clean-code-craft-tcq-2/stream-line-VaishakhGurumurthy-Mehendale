@@ -46,7 +46,7 @@ void FetchAmpsandKelvindata()
         AmpsFlag=0;
         printf("A=%s ",Amps_c);
         Amps[AIndex_I++]=ConvertCharToInt(AmpsFlag_Count,Amps_c);
-        printf("Index=Amps[%d]=%d\n ",AIndex_I,Amps[AIndex_I]);
+        printf("Index=Amps[%d]=%d\n ",AIndex_I-1,Amps[AIndex_I-1]);
         memset(Amps_c, 0, 5);
         AmpsFlag_Count=0;
       }
