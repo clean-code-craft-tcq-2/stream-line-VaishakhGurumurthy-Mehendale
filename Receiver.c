@@ -28,7 +28,7 @@ void FetchAmpsandKelvindata()
         KelvingFlag=1;
         AmpsFlag=0;
         printf("A=%s ",Amps_c);
-        Amps_c[5]={'\0'};
+        Amps_c={'\0'};
         AmpsFlag_Count=0;
       }
       else
@@ -44,7 +44,7 @@ void FetchAmpsandKelvindata()
         AmpsFlag=1;
         KelvinFlag_Count=0;
         printf("K=%s \n",Kelvin_c);
-        Kelvin_c[5]={'\0'};
+        Kelvin_c={'\0'};
       }
       else
       {
