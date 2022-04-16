@@ -30,7 +30,7 @@ void FetchAmpsandKelvindata()
       }
       else
       {
-        Amps_c[AmpsFlag_Count++]=data[i];
+        Amps_c[AmpsFlag_Count++]=data[Index];
         printf("A=%s  ",Amps_c);
       }
     }
