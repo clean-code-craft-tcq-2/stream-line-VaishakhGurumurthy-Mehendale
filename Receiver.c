@@ -33,7 +33,6 @@ void FetchAmpsandKelvindata()
 {
   for(int Index=0; 1000 > Index ; Index++)
   {
-    printf("Index=Amps[0]=%d %d\n ",Amps[0],Index);
     if(data[Index]=='\n' && KelvingFlag != 1)
     {
       AmpsFlag=1;
