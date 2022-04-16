@@ -89,9 +89,9 @@ void ReadConsoleData()
   
   FetchAmpsandKelvindata();
   
-  for(int i=0;i<1000;i++)
+  for(int AIndex_I=0;AIndex_I<1000;AIndex_I++)
   {
-     printf("Converted A= %d K=%d\n",Amps[i], kelvin[i]);
+     printf("Amps[%d]=%d\n ",AIndex_I,Amps[AIndex_I]);
   }
   
   for(int i=0;i<1000;i++)
