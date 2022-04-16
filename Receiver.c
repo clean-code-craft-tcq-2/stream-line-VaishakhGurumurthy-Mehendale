@@ -46,7 +46,7 @@ void FetchAmpsandKelvindata()
       else
       {
         Kelvin_c[KelvinFlag_Count++]=data[Index];
-        printf("K=%d \n",data[Index]);
+        printf("dd=%d \n",data[Index]);
       }
     }
   }
