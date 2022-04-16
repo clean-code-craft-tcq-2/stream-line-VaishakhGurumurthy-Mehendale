@@ -8,19 +8,21 @@ int kelvin[100];
 int AmpsFlag_Count=0;
 char Amps_c[5];
 char Kelvin_c[5];
+int AmpsFlag=0;
+int KelvingFlag=0;
 
 void FetchAmpsandKelvindata()
 {
-  for(int index=0; 100 > Index ; Index++)
+  for(int Index=0; 100 > Index ; Index++)
   {
-    if(data[i]=='\n')
+    if(data[Index]=='\n')
     {
       AmpsFlag=1;
       AmpsFlag_Count=0;
     }
     if(AmpsFlag == 1)
     {
-      if(data[i] == ',')
+      if(data[Index] == ',')
       {
         KelvingFlag=1;
         AmpsFlag=0;
@@ -33,7 +35,7 @@ void FetchAmpsandKelvindata()
     }
     if(KelvingFlag == 1)
     {
-      if(data[i] == '\n')
+      if(data[Index] == '\n')
       {
         KelvingFlag=0;
         AmpsFlag=1;
@@ -41,7 +43,7 @@ void FetchAmpsandKelvindata()
       }
       else
       {
-        Kelvin_c[KelvinFlag_Count++]=data[i];
+        Kelvin_c[KelvinFlag_Count++]=data[Index];
         printf("K=%s \n",Kelvin_c);
       }
     }
