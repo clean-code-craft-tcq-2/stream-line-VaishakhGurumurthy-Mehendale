@@ -14,14 +14,14 @@ int AmpsFlag=0;
 int KelvingFlag=0;
 int AIndex_I=0;
 int KIndex_I=0;
-int ConvertCharToInt(int AmpsFlag_Count,char *Amps_c)
+int ConvertCharToInt(int AmpsFlag_Count,char *AAmps_c)
 {
   int counter=0;
   int data=0;
   while(counter != AmpsFlag_Count)
   {
     data=data*10;
-    data+= (int) (Amps_c[counter]- '0');
+    data+= (int) (AAmps_c[counter]- '0');
     counter++;
   }
   printf("data=%d\n",data);
