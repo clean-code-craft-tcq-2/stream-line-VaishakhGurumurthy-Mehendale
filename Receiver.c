@@ -59,10 +59,10 @@ void FetchAmpsandKelvindata()
       if(data[Index] == '\n')
       {
         KelvingFlag=0;
-        AmpsFlag=1;
-        KelvinFlag_Count=0;
+        AmpsFlag=1;        
         printf("K=%s ",Kelvin_c);
-        kelvin[KIndex_I++]=ConvertCharToInt(KelvinFlag_Count,Kelvin_c);        
+        kelvin[KIndex_I++]=ConvertCharToInt(KelvinFlag_Count,Kelvin_c);   
+        KelvinFlag_Count=0;
         printf("\n");
         memset(Kelvin_c, 0, 5);      
       }
