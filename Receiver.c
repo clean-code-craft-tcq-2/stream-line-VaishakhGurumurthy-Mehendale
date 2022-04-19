@@ -17,17 +17,30 @@ int KIndex_i=0;
 int MaxReadCharCounts_i=0;
 
 /*brief - convert string in to integer value*/
-int ConvertCharToInt(int Flag_Count,char CharReadData[])
+int AmpsConvertCharToInt(int AFlag_Count)
 {
-  int counter_i=0;
-  int ConvetedIntData_i=0;
-  while(counter_i != Flag_Count)
+  int Acounter_i=0;
+  int AConvetedIntData_i=0;
+  while(Acounter_i != AFlag_Count)
   {
-    ConvetedIntData_i=ConvetedIntData_i*10;
-    ConvetedIntData_i += (int) (CharReadData[counter_i]- '0');
-    counter_i++;
+    AConvetedIntData_i=AConvetedIntData_i*10;
+    AConvetedIntData_i += (int) (Amps_c[counter_i]- '0');
+    Acounter_i++;
   }
-  return ConvetedIntData_i;
+  return AConvetedIntData_i;
+}
+
+int KelvinConvertCharToInt(int AFlag_Count)
+{
+  int Kcounter_i=0;
+  int KConvetedIntData_i=0;
+  while(Kcounter_i != AFlag_Count)
+  {
+    KConvetedIntData_i=KConvetedIntData_i*10;
+    KConvetedIntData_i += (int) (Kelvin_c[counter_i]- '0');
+    Kcounter_i++;
+  }
+  return KConvetedIntData_i;
 }
 
 void FetchAmpsandKelvindata()
@@ -45,7 +58,8 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag_i=1;
         AmpsFlag_i=0;
-        Amps_c[AIndex_i++]=ConvertCharToInt(AmpsFlagCount_i,Amps_c);        
+        //Amps_c[AIndex_i++]=ConvertCharToInt(AmpsFlagCount_i,Amps_c);        
+        Amps_c[AIndex_i++]=AmpsConvertCharToInt(AmpsFlagCount_i);    
         memset(Amps_c, 0, 5);
         AmpsFlagCount_i=0;
       }
@@ -60,7 +74,7 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag_i=0;
         AmpsFlag_i=1;        
-        kelvin_i[KIndex_i++]=ConvertCharToInt(KelvinFlagCount_i,Kelvin_c);   
+        //kelvin_i[KIndex_i++]=ConvertCharToInt(KelvinFlagCount_i,Kelvin_c);   
         KelvinFlagCount_i=0;
         memset(Kelvin_c, 0, 5);      
       }
