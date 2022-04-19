@@ -4,8 +4,7 @@
 #include "Receiver.h"
 
 
-TEST_CASE("READ SAMPLE CONSOLE DATA")
+TEST_CASE("RECEIVED SAMPLE DATA PRINT ON CONSOLE ")
 { 
   ReadConsoleData();
-  //REQUIRE(TransmitBatteryStatus(TotalCounts,TotalBatteries) == TRUE);
 }
