@@ -17,7 +17,7 @@ int KIndex_i=0;
 int MaxReadCharCounts_i=0;
 
 /*brief - convert string in to integer value*/
-int ConvertCharToInt(int Flag_Count,char *CharReadData)
+int ConvertCharToInt(int Flag_Count,char CharReadData[])
 {
   int counter_i=0;
   int ConvetedIntData_i=0;
@@ -60,7 +60,7 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag_i=0;
         AmpsFlag_i=1;        
-       // kelvin_i[KIndex_i++]=ConvertCharToInt(KelvinFlagCount_i,Kelvin_c);   
+        kelvin_i[KIndex_i++]=ConvertCharToInt(KelvinFlagCount_i,Kelvin_c);   
         KelvinFlagCount_i=0;
         memset(Kelvin_c, 0, 5);      
       }
