@@ -45,7 +45,7 @@ void FetchAmpsandKelvindata()
       {
         KelvingFlag_i=1;
         AmpsFlag_i=0;
-       // Amps_c[AIndex_i++]=ConvertCharToInt(AmpsFlagCount_i,Amps_c);        
+        Amps_c[AIndex_i++]=ConvertCharToInt(AmpsFlagCount_i,Amps_c);        
         memset(Amps_c, 0, 5);
         AmpsFlagCount_i=0;
       }
