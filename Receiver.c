@@ -97,7 +97,7 @@ void ReadandPrintSenderData()
     MaxReadCharCounts_i++;
   }while(RecivedData_c[MaxReadCharCounts_i-1] != '\0');
   
-  FetchAmpsandKelvindata();
+//  FetchAmpsandKelvindata();
   
   for(int Index_i=0;Index_i<50;Index_i++)
   {
