@@ -72,6 +72,7 @@ void FetchAmpsandKelvindata()
   }
 }
 
+#if 0
 void SenderDataAverageValue(int *AAmps_i,int* AKelvin_i)
 {
   int KelvinAvg=0;
@@ -85,6 +86,8 @@ void SenderDataAverageValue(int *AAmps_i,int* AKelvin_i)
   AMPSAvg/=5;
   printf("\nAverage value of Amps=%d and Kelvin=%d",AMPSAvg,KelvinAvg);
 }
+#endif
+
 
 void ReadandPrintSenderData()
 {
