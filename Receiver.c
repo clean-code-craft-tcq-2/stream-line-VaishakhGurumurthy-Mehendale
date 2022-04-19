@@ -24,7 +24,7 @@ int AmpsConvertCharToInt(int AFlag_Count)
   while(Acounter_i != AFlag_Count)
   {
     AConvetedIntData_i=AConvetedIntData_i*10;
-    AConvetedIntData_i += (int) (Amps_c[counter_i]- '0');
+    AConvetedIntData_i += (int) (Amps_c[Acounter_i]- '0');
     Acounter_i++;
   }
   return AConvetedIntData_i;
@@ -37,7 +37,7 @@ int KelvinConvertCharToInt(int AFlag_Count)
   while(Kcounter_i != AFlag_Count)
   {
     KConvetedIntData_i=KConvetedIntData_i*10;
-    KConvetedIntData_i += (int) (Kelvin_c[counter_i]- '0');
+    KConvetedIntData_i += (int) (Kelvin_c[Kcounter_i]- '0');
     Kcounter_i++;
   }
   return KConvetedIntData_i;
