@@ -72,23 +72,6 @@ void FetchAmpsandKelvindata()
   }
 }
 
-void ReadandPrintSenderData()
-{
-  do
-  {
-    scanf("%c",&RecivedData_c[MaxReadCharCounts_i]);
-    MaxReadCharCounts++;
-  }while(RecivedData_c[MaxReadCharCounts_i-1] != '\0');
-  
-  FetchAmpsandKelvindata();
-  
-  for(int Index_i=0;Index_i<50;Index_i++)
-  {
-     printf("Amps[%d]=%d Kelvin[%d]=%d\n ",Index_i,Amps_i[Index_i],Index_i,kelvin_i[Index_i]);
-  }
-     SenderDataAverageValue(Amps_i,Kelvin_i)
-}
-
 void SenderDataAverageValue(int *AAmps_i,int* AKelvin_i)
 {
   int KelvinAvg=0;
@@ -102,4 +85,23 @@ void SenderDataAverageValue(int *AAmps_i,int* AKelvin_i)
   AMPSAvg/=5;
   printf("\nAverage value of Amps=%d and Kelvin=%d",AMPSAvg,KelvinAvg);
 }
+
+void ReadandPrintSenderData()
+{
+  do
+  {
+    scanf("%c",&RecivedData_c[MaxReadCharCounts_i]);
+    MaxReadCharCounts_i++;
+  }while(RecivedData_c[MaxReadCharCounts_i-1] != '\0');
+  
+  FetchAmpsandKelvindata();
+  
+  for(int Index_i=0;Index_i<50;Index_i++)
+  {
+     printf("Amps[%d]=%d Kelvin[%d]=%d\n ",Index_i,Amps_i[Index_i],Index_i,kelvin_i[Index_i]);
+  }
+     SenderDataAverageValue(Amps_i,kelvin_i);
+}
+
+
                       
