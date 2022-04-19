@@ -6,5 +6,5 @@
 
 TEST_CASE("RECEIVED SAMPLE DATA PRINT ON CONSOLE ")
 { 
-  ReadConsoleData();
+  ReadandPrintSenderData();
 }
