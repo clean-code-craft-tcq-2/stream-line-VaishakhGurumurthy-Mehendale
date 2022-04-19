@@ -100,7 +100,7 @@ void ReadandPrintSenderData()
   {
      printf("Amps[%d]=%d Kelvin[%d]=%d\n ",Index_i,Amps_i[Index_i],Index_i,kelvin_i[Index_i]);
   }
-     SenderDataAverageValue(Amps_i,kelvin_i);
+     //SenderDataAverageValue(Amps_i,kelvin_i);
 }
 
 
