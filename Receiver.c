@@ -3,8 +3,8 @@
 
 #include "Receiver.h"
 
-int Amps_i[50];
-int kelvin_i[50];
+int Amps_i[52];
+int kelvin_i[52];
 char RecivedData_c[1000];
 char Amps_c[5];
 char Kelvin_c[5];
@@ -92,23 +92,6 @@ void FetchAmpsandKelvindata()
     }
   }
 }
-
-#if 0
-void SenderDataAverageValue(int *AAmps_i,int* AKelvin_i)
-{
-  int KelvinAvg=0;
-  int AMPSAvg=0;
-  for(int Index=45;Index <50 ; Index++)
-  {
-    KelvinAvg+=AKelvin_i[Index];
-    AMPSAvg+=AAmps_i[Index];
-  }
-  KelvinAvg /=5;
-  AMPSAvg/=5;
-  printf("\nAverage value of Amps=%d and Kelvin=%d",AMPSAvg,KelvinAvg);
-}
-#endif
-
 
 void ReadandPrintSenderData()
 {
