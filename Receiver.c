@@ -73,14 +73,14 @@ void FetchAmpsandKelvindata()
   }
 }
 
-void SenderDataAverageValue(int *AAmps_i,int* AKelvin_i)
+void SenderDataAverageValue()
 {
   int KelvinAvg=0;
   int AMPSAvg=0;
   for(int Index=45;Index <50 ; Index++)
   {
-    KelvinAvg+=AKelvin_i[Index];
-    AMPSAvg+=AAmps_i[Index];
+    KelvinAvg+=kelvin[Index];
+    AMPSAvg+=Amps[Index];
   }
   KelvinAvg /=5;
   AMPSAvg/=5;
@@ -101,5 +101,5 @@ void ReadandPrintSenderData()
   {
      printf("Amps[%d]=%d Kelvin[%d]=%d\n ",Index_I,Amps[Index_I],Index_I,kelvin[Index_I]);
   }
-     SenderDataAverageValue(Amps_i,kelvin_i);
+     SenderDataAverageValue();
 }
