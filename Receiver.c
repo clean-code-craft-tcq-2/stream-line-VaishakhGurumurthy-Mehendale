@@ -21,11 +21,18 @@ int AmpsConvertCharToInt(int AFlag_Count)
 {
   int Acounter_i=0;
   int AConvetedIntData_i=0;
-  while(Acounter_i != AFlag_Count)
+  if(AFlag_Count < 5)
   {
-    AConvetedIntData_i=AConvetedIntData_i*10;
-    AConvetedIntData_i += (int) (Amps_c[Acounter_i]- '0');
-    Acounter_i++;
+    while(Acounter_i != AFlag_Count)
+    {
+      AConvetedIntData_i=AConvetedIntData_i*10;
+      AConvetedIntData_i += (int) (Amps_c[Acounter_i]- '0');
+      Acounter_i++;
+    }
+  }
+  else
+  {
+   /* do nothing */
   }
   return AConvetedIntData_i;
 }
